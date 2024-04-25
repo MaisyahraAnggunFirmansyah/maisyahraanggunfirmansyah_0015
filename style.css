@@ -1,0 +1,57 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.wrapper > * {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1 100%;
+}
+header{
+    background: rgb(236, 82, 179);
+    height: 180px;
+}
+.nav{
+    background: rgb(236, 82, 179);
+    height: 200px;
+}
+.footer{
+    background: rgb(236, 82, 179);
+    height: 180px;
+}
+.main{
+    background: rgb(236, 82, 179);
+    height: 270px;
+    padding: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+.aside1{
+    background: rgb(236, 82, 179);
+}
+/* tampilkan responsive */
+@media all and (min-width: 800px){
+    .main{
+        flex: 2;
+    }
+    .aside1{
+        order: 2;
+    }
+    .main{
+        order: 1;
+    }
+    .footer{
+        order: 4;
+    }
+}
+@media all and (min-width: 600px){
+    .aside1 {
+        flex: 1;
+    }
+}
